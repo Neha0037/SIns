@@ -1,0 +1,49 @@
+<!-- <div>
+	<a href={{ route }}>{{ title }}</a>
+</div> -->
+
+ <!-- this is a sample default list template -->
+
+<style type="text/css">
+	.breadcrumb{
+	display: none;
+	}
+	.website-list{
+		min-height: 250px;
+	}
+	.result{
+		min-height: 250px;
+	}
+	.port_card{
+		float: left;
+		height: 200px;
+		width: 150px;
+		margin: 20px;
+		overflow: hidden;
+		border: 1px solid #A09EA3;
+		border-radius: .3em;
+		background-color: #ffffff;
+	}
+	.port_head{
+		height: 150px;
+		width: 150px;
+	}
+	.port_title{
+		height: 50px;
+		width: 150px;
+		background-color: #E0DDE5;
+	}
+</style>
+
+<div class="port_card">
+	<div class="port_head">
+		<center>
+			<a href="{{ route }}"><img src="{{ attachment }}"></a>
+		</center>
+	</div>
+	<div class="port_title">
+		<center>
+			<a href="{{ route }}">{{ title }}</a>
+		</center>
+	</div>
+</div>

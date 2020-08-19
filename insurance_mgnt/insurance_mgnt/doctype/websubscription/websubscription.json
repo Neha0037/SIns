@@ -1,0 +1,63 @@
+{
+ "autoname": "WB.######",
+ "creation": "2020-08-12 17:04:56.296724",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "subscriber_name",
+  "subscriber_email",
+  "short_message"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "read_only": 1
+  },
+  {
+   "fieldname": "subscriber_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subscriber Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subscriber_email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subscriber Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "short_message",
+   "fieldtype": "Small Text",
+   "label": "Short Message"
+  }
+ ],
+ "modified": "2020-08-18 18:47:39.575789",
+ "modified_by": "Administrator",
+ "module": "Insurance Mgnt",
+ "name": "WebSubscription",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,43 @@
+{
+ "autoname": "BILL.#########",
+ "creation": "2020-08-11 12:41:36.066099",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bill_from",
+  "dated",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "bill_from",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bill From"
+  },
+  {
+   "fieldname": "dated",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Dated"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-08-18 18:36:41.114567",
+ "modified_by": "Administrator",
+ "module": "Insurance Mgnt",
+ "name": "Bill Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

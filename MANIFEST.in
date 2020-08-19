@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include insurance_mgnt *.css
+recursive-include insurance_mgnt *.csv
+recursive-include insurance_mgnt *.html
+recursive-include insurance_mgnt *.ico
+recursive-include insurance_mgnt *.js
+recursive-include insurance_mgnt *.json
+recursive-include insurance_mgnt *.md
+recursive-include insurance_mgnt *.png
+recursive-include insurance_mgnt *.py
+recursive-include insurance_mgnt *.svg
+recursive-include insurance_mgnt *.txt
+recursive-exclude insurance_mgnt *.pyc

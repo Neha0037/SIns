@@ -1,0 +1,225 @@
+{
+ "autoname": "INS.######",
+ "creation": "2020-08-11 11:49:09.083882",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type_of_policy",
+  "irda_agent_name",
+  "insurance_company",
+  "group",
+  "channel_partner",
+  "proposer_name",
+  "column_break_7",
+  "subtype",
+  "expiry_date",
+  "policy_period",
+  "policy_number",
+  "insured_name",
+  "motor_section",
+  "od",
+  "tp",
+  "column_break_16",
+  "add_on",
+  "payment_details",
+  "cheque_amount",
+  "com_pre_wo_tax",
+  "pre_w_tax",
+  "mode_of_payment",
+  "shortfall_cash_paid",
+  "column_break_24",
+  "mobile_self",
+  "mobile_coordinator",
+  "email_self",
+  "policy_address"
+ ],
+ "fields": [
+  {
+   "fieldname": "type_of_policy",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Type Of Policy",
+   "options": "Type Of Policy",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subtype",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "SubType",
+   "options": "Sub Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "irda_agent_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "IRDA Agent Name",
+   "options": "IRDA Agent",
+   "reqd": 1
+  },
+  {
+   "fieldname": "insurance_company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Insurance Company",
+   "options": "Insurance Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "channel_partner",
+   "fieldtype": "Link",
+   "label": "Channel Partner",
+   "options": "Channel Partner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "group",
+   "fieldtype": "Link",
+   "label": "Group",
+   "options": "Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "policy_period",
+   "fieldtype": "Int",
+   "label": "Policy Period",
+   "reqd": 1
+  },
+  {
+   "fieldname": "policy_number",
+   "fieldtype": "Int",
+   "label": "Policy Number"
+  },
+  {
+   "fieldname": "proposer_name",
+   "fieldtype": "Data",
+   "label": "Proposer Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "insured_name",
+   "fieldtype": "Data",
+   "label": "Insured Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "od",
+   "fieldtype": "Int",
+   "label": "OD"
+  },
+  {
+   "fieldname": "tp",
+   "fieldtype": "Int",
+   "label": "TP"
+  },
+  {
+   "fieldname": "add_on",
+   "fieldtype": "Int",
+   "label": "ADD ON"
+  },
+  {
+   "fieldname": "cheque_amount",
+   "fieldtype": "Currency",
+   "label": "Cheque Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "com_pre_wo_tax",
+   "fieldtype": "Currency",
+   "label": "Com Pre WO Tax"
+  },
+  {
+   "fieldname": "pre_w_tax",
+   "fieldtype": "Currency",
+   "label": "Pre W Tax"
+  },
+  {
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Link",
+   "label": "Mode Of Payment",
+   "options": "Mode of Payment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shortfall_cash_paid",
+   "fieldtype": "Data",
+   "label": "Shortfall Cash Paid"
+  },
+  {
+   "fieldname": "mobile_self",
+   "fieldtype": "Data",
+   "label": "Mobile Self",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile_coordinator",
+   "fieldtype": "Data",
+   "label": "Mobile Coordinator",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email_self",
+   "fieldtype": "Data",
+   "label": "Email Self",
+   "reqd": 1
+  },
+  {
+   "fieldname": "policy_address",
+   "fieldtype": "Data",
+   "label": "Policy Address",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.type_of_policy === 'MOTOR'",
+   "fieldname": "motor_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "payment_details",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "modified": "2020-08-14 10:57:46.635014",
+ "modified_by": "Administrator",
+ "module": "Insurance Mgnt",
+ "name": "Insurance Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

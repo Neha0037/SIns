@@ -1,0 +1,157 @@
+{
+ "autoname": "CLAIM.######",
+ "creation": "2020-08-11 12:36:29.426079",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "insured_name",
+  "patient_name",
+  "column_break_3",
+  "relationship_with_insured",
+  "address",
+  "other_details",
+  "claim_intimation_no",
+  "contact_no",
+  "insurance_company_name",
+  "hospital_name",
+  "column_break_11",
+  "admission_date",
+  "discharge_date",
+  "mediclaim_policy_no",
+  "hospital_address",
+  "billing_details",
+  "bill_details",
+  "enclosure_section",
+  "summary_of_bills",
+  "claim_form"
+ ],
+ "fields": [
+  {
+   "fieldname": "insured_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Insured Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Patient Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "relationship_with_insured",
+   "fieldtype": "Select",
+   "label": "Relationship with Insured",
+   "options": "Son\nDaughter\nWife\nHusband"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "claim_intimation_no",
+   "fieldtype": "Data",
+   "label": "Claim Intimation No"
+  },
+  {
+   "fieldname": "admission_date",
+   "fieldtype": "Date",
+   "label": "Admission Date"
+  },
+  {
+   "fieldname": "discharge_date",
+   "fieldtype": "Date",
+   "label": "Discharge Date"
+  },
+  {
+   "fieldname": "contact_no",
+   "fieldtype": "Int",
+   "label": "Contact No"
+  },
+  {
+   "fieldname": "insurance_company_name",
+   "fieldtype": "Link",
+   "label": "Insurance Company Name",
+   "options": "Insurance Company"
+  },
+  {
+   "fieldname": "mediclaim_policy_no",
+   "fieldtype": "Data",
+   "label": "Mediclaim Policy No"
+  },
+  {
+   "fieldname": "hospital_name",
+   "fieldtype": "Data",
+   "label": "Hospital Name"
+  },
+  {
+   "fieldname": "hospital_address",
+   "fieldtype": "Small Text",
+   "label": "Hospital Address"
+  },
+  {
+   "fieldname": "bill_details",
+   "fieldtype": "Table",
+   "label": "Bill Details",
+   "options": "Bill Details"
+  },
+  {
+   "fieldname": "enclosure_section",
+   "fieldtype": "Section Break",
+   "label": "Enclosures"
+  },
+  {
+   "fieldname": "summary_of_bills",
+   "fieldtype": "Attach",
+   "label": "Summary of Bills"
+  },
+  {
+   "fieldname": "claim_form",
+   "fieldtype": "Attach",
+   "label": "Claim Form"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "other_details",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "billing_details",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "modified": "2020-08-12 19:33:28.819845",
+ "modified_by": "Administrator",
+ "module": "Insurance Mgnt",
+ "name": "Claim Details",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

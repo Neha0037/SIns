@@ -1,0 +1,30 @@
+<style type="text/css">
+	h1 {
+		text-align: center;
+	}
+	.port_img{
+		height: 350px;
+		width: 550px;
+		border-style: solid;
+		border-color: #1a1a1a;
+		margin-left: 300px;
+	}
+	.port_desc{
+		margin: 60px;
+		text-align: center;
+	}
+</style>
+
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ title }}</h1>
+<div class="port_img">
+<img src={{ attachment }} width="500px" height="300px" align="center">
+</div>
+<div class="port_desc">
+<h6>{{ description }}</h6>
+</div>
+{% endblock %}
+
+<!-- this is a sample default web page template -->

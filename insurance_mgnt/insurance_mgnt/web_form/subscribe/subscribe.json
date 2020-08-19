@@ -1,0 +1,82 @@
+{
+ "accept_payment": 0,
+ "allow_comments": 0,
+ "allow_delete": 0,
+ "allow_edit": 0,
+ "allow_incomplete": 0,
+ "allow_multiple": 0,
+ "allow_print": 0,
+ "amount": 0.0,
+ "amount_based_on_field": 0,
+ "button_label": "Submit",
+ "creation": "2020-08-12 17:08:33.599249",
+ "currency": "INR",
+ "doc_type": "WebSubscription",
+ "docstatus": 0,
+ "doctype": "Web Form",
+ "idx": 0,
+ "introduction_text": "<div>For newsletters, updates on insurance policies, rules and related details please subscribe by filling the subscription form.</div>",
+ "is_standard": 1,
+ "login_required": 0,
+ "max_attachment_size": 0,
+ "modified": "2020-08-13 15:19:49.103646",
+ "modified_by": "Administrator",
+ "module": "Insurance Mgnt",
+ "name": "subscribe",
+ "owner": "Administrator",
+ "payment_button_label": "Buy Now",
+ "published": 1,
+ "route": "subscribe",
+ "route_to_success_link": 0,
+ "show_attachments": 0,
+ "show_in_grid": 0,
+ "show_sidebar": 1,
+ "sidebar_items": [
+  {
+   "enabled": 1,
+   "route": "/contact",
+   "title": "Contact"
+  }
+ ],
+ "success_message": "You are now subscribed to the services.",
+ "success_url": "/subscribe",
+ "title": "Subscription Form",
+ "web_form_fields": [
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "subscriber_name",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Subscriber Name",
+   "max_length": 0,
+   "max_value": 0,
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "subscriber_email",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Subscriber Email",
+   "max_length": 0,
+   "max_value": 0,
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "short_message",
+   "fieldtype": "Small Text",
+   "hidden": 0,
+   "label": "Short Message",
+   "max_length": 0,
+   "max_value": 0,
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  }
+ ]
+}
